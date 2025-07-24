@@ -13,9 +13,10 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      nrs = "sudo nixos-rebuild switch --flake /home/tpickup/.dotfiles";
-      hdn = "sudo nano ~/.dotfiles/home.nix";
-      cdn = "sudo nano ~/.dotfiles/configuration.nix";
+      nrs = "sh ~/.dotfiles/rebuild.sh";
+      fdn = "nano ~/.dotfiles/flake.nix";
+      hdn = "nano ~/.dotfiles/home.nix";
+      cdn = "nano ~/.dotfiles/configuration.nix";
     };
 
     initExtra = ''
