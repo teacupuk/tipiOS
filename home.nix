@@ -13,7 +13,7 @@
   programs.bash = {
     enable = true;
     shellAliases = {
-      nrs = "sh ~/.dotfiles/rebuild.sh";
+      nrs = "sh ~/.dotfiles/rebuild.sh"; # Rebuilds NixOS
       fdn = "nano ~/.dotfiles/flake.nix";
       hdn = "nano ~/.dotfiles/home.nix";
       cdn = "nano ~/.dotfiles/configuration.nix";
