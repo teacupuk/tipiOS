@@ -1,5 +1,5 @@
 {
-  description = "tipiOS";
+  description = "tipiOS - NixOS Config for Network Engineers";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-25.05";
