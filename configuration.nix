@@ -41,19 +41,16 @@
 
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
-  services.xserver = {
+  services.xserver.enable = true;
+  services.xserver.displayManager.gdm = {
     enable = true;
-    windowManager.qtile.enable = true;
-    displayManager.sessionCommands = ''
-      xwallpaper --zoom ~/wallpapers/orbit.png
-      xset r rate 200 35 &
-    '';
+    wayland = true;
   };
+  services.dbus.enable = true;
+  services.gvfs.enable = true;
 
-  services.picom = {
-    enable = true;
-    fade = true;
-  };
+  hardware.opengl.enable = true;
+  programs.hyprland.enable = true;
 
   # Configure keymap in X11
   # services.xserver.xkb.layout = "us";
@@ -102,6 +99,7 @@
     git
     pfetch
     alejandra
+    kitty
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
